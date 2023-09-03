@@ -12,6 +12,7 @@ devices:
 - /dev/dvb/adapter0/dvr0
 - /dev/dvb/adapter0/frontend0
 - /dev/dvb/adapter0/net0
+privileged: true
 image: ghcr.io/gauthamvarmak/tvheadend/{arch}
 init: false
 map:

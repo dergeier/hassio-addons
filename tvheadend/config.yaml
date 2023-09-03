@@ -8,6 +8,10 @@ description: TV streaming server and recorder.
 devices:
 - /dev/dvb
 - /dev/dri
+- /dev/dvb/adapter0/demux0
+- /dev/dvb/adapter0/dvr0
+- /dev/dvb/adapter0/frontend0
+- /dev/dvb/adapter0/net0
 image: ghcr.io/gauthamvarmak/tvheadend/{arch}
 init: false
 map:
@@ -29,6 +33,6 @@ schema:
   - str
 slug: tvheadend
 stage: experimental
-url: https://github.com/GauthamVarmaK/addon-tvheadend
+url: https://github.com/dergeier/addon-tvheadend
 version: 2.4.4
 webui: http://[HOST]:[PORT:9981]/
